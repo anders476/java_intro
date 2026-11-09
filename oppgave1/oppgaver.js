@@ -20,9 +20,10 @@
 // Skriv ut begge på samme linje.
 // Forventet: Ola Nordmann  (men ditt navn)
 
-const fornavn = "Anders";
-const etternavn = "Dømmem";
-print [fornavn + etternavn]
+let firstname = "Anders";
+let lastname = "Dønnem";
+console.log(firstname, lastname);
+
 
 // Oppgave 2 (grunnleggende)
 // Lag let hp = 100. Spilleren blir truffet av en isbjørn og mister 30 hp.
