@@ -30,18 +30,28 @@ console.log(firstname, lastname);
 // Endre hp (uten let foran) og skriv den ut.
 // Forventet: 70
 
+let hp = 100;
+hp = hp - 30;
+console.log(hp);
 
 // Oppgave 3 (grunnleggende)
 // Lag const PI = 3.14159. Prøv deretter å skrive PI = 3; og kjør fila.
 // Skriv i oppgavearket hva feilmeldingen betyr, og fjern linja igjen.
 // Forventet: TypeError: Assignment to constant variable.
 
+const PI = 3.14159;
+//PI = 3;
+//TypeError: Assignment to constant variable.
+// Det som skjedde var at jeg sa at den var 3 noe som den ikke var siden jeg hadde const og ikke let. Dette leder til at jeg får en feil melling
 
 // Oppgave 4 (middels)
 // Et spill på Steam koster 200 kr før moms. Lag const MOMS = 0.25 og let pris = 200.
 // Skriv ut prisen med moms.
 // Forventet: Pris med moms: 250 kr
 
+let pris = 200
+const moms = 0.25
+console.log("Pris med moms:", pris + pris * moms,"kr")
 
 // Oppgave 5 (avansert)
 // Lag disse som const eller let. Begrunn valgene i oppgavearket:
