@@ -104,7 +104,7 @@ console.log(Number("5")+5)
 // Skriv ut hvor mange hele lag det blir, og hvor mange som blir til overs.
 // Tips: Math.floor(17 / 4) runder ned.
 // Forventet: 4 lag
-//            1 til overs
+//            1 til overs 
 
 
 
