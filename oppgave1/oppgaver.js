@@ -79,12 +79,14 @@ let temperaturen_i_tromsø_nå = -4
 
 console.log(typeof hp);
 console.log(typeof firstname);
+console.log
 
 // Oppgave 7 (grunnleggende)
 // Bruk backticks og ${} til å skrive ut en setning med firstname og hp.
 // Forventet: Ola har 70 hp
 
 console.log(`${firstname} har ${hp} hp`)
+console.log
 
 // Oppgave 8 (middels)
 // Skriv ut 5 + 5, deretter "5" + 5, deretter Number("5") + 5.
@@ -96,6 +98,7 @@ console.log(`${firstname} har ${hp} hp`)
 console.log(5+5)
 console.log("5"+5)
 console.log(Number("5")+5)
+console.log
 //Det som skjer er at du prompter et nummer til å bli en string og etter det prompter du en string til å bli et number. Grunnen til hvorfor "5" + 5 = 55 er frodi programe kan ikke plusse samen number og string sån den kan med number så da blir de bare satt vesidenav hverandre.
 
 
@@ -106,7 +109,11 @@ console.log(Number("5")+5)
 // Forventet: 4 lag
 //            1 til overs 
 
-
+const elever = 17
+const lag = 4 
+console.log(Math.floor(elever/lag), "lag");
+console.log(elever % lag, "til overs");
+console.log
 
 // ---------------- VALG MED IF ----------------
 // if kjører koden bare når betingelsen er sann. else kjører ellers.
