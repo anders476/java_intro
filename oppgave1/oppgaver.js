@@ -283,25 +283,32 @@ console.log
 // Forventet: Hammerfest
 //            6
 
+byer.push("Hammerfest");
+console.log(byer[ byer.length - 1 ]);
+console.log(byer.length);
+console.log
 
 // Oppgave 22 (middels)
 // Skriv ut alle byene med en for-løkke.
 // Forventet: Tromsø, Bodø, Alta, Harstad, Narvik, Hammerfest (én per linje)
 
-byer.push("Hammerfest");
-console.log(byer[ byer.length - 1 ]);
-console.log(byer.length);
-console.log
+for (let i = 0; i < byer.length; i++) {
+    console.log(byer[i]);
+}
 
 // Oppgave 23 (middels)
 // const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
 // Tell hvor mange dager det var kaldere enn -5. Bruk for og if.
 // Forventet: 3
 
-for (let i = 0; i < byer.length; i++) {
-    console.log(byer[i]);
+const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
+let antall = 0;
+for (let i = 0; i < temperaturer.length; i++) {
+    if (temperaturer[i] < -5) {
+        antall++;
+    }
 }
-console.log
+console.log(antall);
 
 // Oppgave 24 (avansert)
 // const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
@@ -310,15 +317,7 @@ console.log
 // Forventet: 3
 //            [ 'sverd', 'skjold', 'fiskestang' ]
 
-const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
-let antall = 0;
-for (let i = 0; i < temperaturer.length; i++) {
-    if ( temperaturer[i] < -5) {
-    antall++;
-    }
-}
-console.log(antall);
-console.log
+
 
 // Oppgave 25 (avansert)
 // inventory er const, men push virker likevel. Hvorfor?
