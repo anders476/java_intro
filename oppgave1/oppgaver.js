@@ -59,6 +59,12 @@ console.log("Pris med moms:", pris + pris * moms,"kr")
 // høyden på Fløya (671), temperaturen i Tromsø nå (-4).
 // Forventet: ingenting i konsollen
 
+let spillere_på_serveren = 16
+let antall_liv_igjen = 3
+const høyden_på_fløya = 671
+let temperaturen_i_tromsø_nå = -4
+//Grunnen til hvorfor alle andre er let og en er const er fordi at høyden på fløya er noe som man ikke fonrventer at skal forandre seg under utviklingen av koden og de andre er ting som skal få konstant nye verdier og trenger oppdateringer underveis.
+
 
 // ---------------- TEKST OG TALL ----------------
 // Tekst (string) står i anførselstegn: "Kari". Tall (number) står uten: 17.
@@ -71,11 +77,14 @@ console.log("Pris med moms:", pris + pris * moms,"kr")
 // Forventet: number
 //            string
 
+console.log(typeof hp);
+console.log(typeof firstname);
 
 // Oppgave 7 (grunnleggende)
 // Bruk backticks og ${} til å skrive ut en setning med firstname og hp.
 // Forventet: Ola har 70 hp
 
+console.log(`${firstname} har ${hp} hp`)
 
 // Oppgave 8 (middels)
 // Skriv ut 5 + 5, deretter "5" + 5, deretter Number("5") + 5.
@@ -84,6 +93,11 @@ console.log("Pris med moms:", pris + pris * moms,"kr")
 //            55
 //            10
 
+console.log(5+5)
+console.log("5"+5)
+console.log(Number("5")+5)
+//Det som skjer er at du prompter et nummer til å bli en string og etter det prompter du en string til å bli et number. Grunnen til hvorfor "5" + 5 = 55 er frodi programe kan ikke plusse samen number og string sån den kan med number så da blir de bare satt vesidenav hverandre.
+
 
 // Oppgave 9 (middels)
 // 17 elever skal deles i lag på 4. Bruk / og % .
@@ -91,6 +105,7 @@ console.log("Pris med moms:", pris + pris * moms,"kr")
 // Tips: Math.floor(17 / 4) runder ned.
 // Forventet: 4 lag
 //            1 til overs
+
 
 
 // ---------------- VALG MED IF ----------------
